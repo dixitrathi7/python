@@ -8,7 +8,7 @@ def delete_empty_files(dir_path):
         full_path = os.path.join(dir_path, item)
         if os.path.isfile(full_path) and item.endswith(".log"):
             os.remove(full_path)
-            # if os.path.getsize(full_path) == 0:
+            # if os.path.getsize(full_path) == 0:  # only you want to deletre empty files
             #     os.remove(full_path)
             #     print(f"Deleted empty log file: {item}")
 
